@@ -1,0 +1,8 @@
+<h1>Beers n Cheers</h1>
+
+<% @beers.each do |beer| %>
+  <%= beer.name %>
+  <%= beer.style %>
+  <%= beer.alcohol_by_volume %>
+  <%= link_to 'Show Beer', beer_path(beers:id) %>
+<% end %>
