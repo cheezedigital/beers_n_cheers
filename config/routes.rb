@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
 
   resources :beers
-  root 'home#index'
+  root to: 'static#home'
 end
