@@ -5,11 +5,11 @@ class BeersController < ApplicationController
   end
 
   def show
-    @beers = Beer.find(params[:id])
+    @beer = Beer.find(params[:id])
   end
 
   def new
-    @beers = Beer.new
+    @beer = Beer.new
   end
 
 end
